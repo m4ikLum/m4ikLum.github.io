@@ -3,75 +3,92 @@
 <head>
     <meta charset="UTF-8" />
     <title>Maiko's Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Preloader -->
     <div class="loader"></div>
-    <button class="tablink" onclick="openPage('Home')">Home</button>
-    <button class="tablink" onclick="openPage('About')">About</button>
-    <button class="tablink" onclick="openPage('Projects')">Projects</button>
-    <button class="tablink" onclick="openPage('Contact Me')">Contact Me</button>
+    <button class="tablink" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openTab(event, 'About Me')">About Me</button>
+    <button class="tablink" onclick="openTab(event, 'Projects')">Projects</button>
+    <button class="tablink" onclick="openPage(event, 'Contact')">Contact</button>
+
+
+    <!-- Home tab -->
     <div id="Home" class="tabcontent">
         <h1>Welcome to my website &#128513; </h1>
-        <h3>Hi everyone! My name is Maiko Lum, and I recently graduated from Boston University with a Bachelor of Science in <u>Biomedical Engineering</u> and a minor in <u>Computer Engineering</u>. I'm passionate about working with software and hardware to drive innovation and create technologies that make a meaningful difference in people's lives.</h3>
+        <p>Hi everyone! My name is Maiko Lum, and I recently graduated from Boston University with a Bachelor of Science in <u>Biomedical Engineering</u> and a minor in <u>Computer Engineering</u>. I'm passionate about working with software and hardware to drive innovation and create technologies that make a meaningful difference in people's lives.</p>
       </div>
 
-    <div id="About" class="tabcontent">
+    <!-- About tab -->
+    <div id="About Me" class="tabcontent">
         <h1>hi</h1>
 
     </div>
 
+    <!-- Projects tab -->
     <div id="Projects" class="tabcontent">
-        <!-- Project Card -->
-        <div class="card" onclick="openModal('modal1')">
-            <h3 class="card-title">Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</h3>
-            <p>Research project with Boston University School of Medicine Gong Lab</p>
+        
+      <div class="card project-card" onclick="expandCard(this)">
+        <div class="card-title">Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</div>
+        <div class="card-summary">Boston University School of Medicine Gong Lab</div>
+        <div class="card-details">
+          <img src="research_poster.jpg" alt="Project Image" style="width:100%; margin:12px 0;">
+          <p>
+            This study investigated giant vacuoles (GV) in Schlemm's Canal (SC) using serial block-face scanning electron microscopy (SBF-SEM) and 3D reconstruction for a detailed analysis of cause of primary open-angle glaucoma (POAG).
+          </p>
+          <div class="card-skills">
+            <strong>Skills Used:</strong>
+            <ul>
+              <li>LabVIEW</li>
+              <li>Perfusion</li>
+              <li>3D Reconstruction</li>
+              <li>Image Analysis</li>
+              <li>Data Visualization</li>
+            </ul>
           </div>
-
-          <!-- Modal1 -->
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</h2>
-            <p>This study investigated giant vacuoles (GV) in Schlemm's Canal (SC) using serial block-face scanning electron microscopy (SBF-SEM) and 3D reconstruction for a detailed analysis of cause of primary open-angle glaucoma (POAG).</p>
-            <p>3D Reconstruction, LabVIEW, Perfusion</p>
-            </div>
         </div>
+      </div>
+      
 
     </div>
 
+    <!-- Javascript code -->
     <script>
-        function openModal(id) {
-          document.getElementById(id).style.display = 'block';
-        }
-    
-        function closeModal(id) {
-          document.getElementById(id).style.display = 'none';
-        }
-    
-        window.onclick = function(event)  {
-          const modals = document.querySelectorAll('.modal');
-          modals.forEach(modal => {
-            if (event.target === modal) modal.style.display = 'none';
-          });
-        }
-
-        function openPage(pageName) {
+      // Tab functionality
+      function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = "none";
         }
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(pageName).style.display = "block";
-        
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Open default tab on load
+      document.getElementById("defaultOpen").click();
+      
+      // Card expand/collapse functionality
+      function expandCard(card) {
+        // Collapse all other cards
+        document.querySelectorAll('.project-card').forEach(function(c) {
+          if (c !== card) c.classList.remove('expanded');
+        });
+        // Toggle this card
+        card.classList.toggle('expanded');
+        // Show/hide details
+        document.querySelectorAll('.project-card .card-details').forEach(function(details) {
+          details.style.display = "none";
+        });
+        if (card.classList.contains('expanded')) {
+          card.querySelector('.card-details').style.display = "block";
         }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+      }
       </script>
 </body>
+
 </html>
