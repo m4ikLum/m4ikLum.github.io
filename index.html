@@ -25,8 +25,36 @@
         <!-- Project Card -->
         <div class="card" onclick="openModal('modal1')">
             <h3 class="card-title">Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</h3>
-            <p>This study investigated giant vacuoles (GV) in Schlemm's Canal (SC) using serial block-face scanning electron microscopy (SBF-SEM) and 3D reconstruction for a detailed analysis of cause of primary open-angle glaucoma (POAG).</p>
+            <p>Research project with Boston University School of Medicine Gong Lab</p>
           </div>
 
+          <!-- Modal1 -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</h2>
+            <p>This study investigated giant vacuoles (GV) in Schlemm's Canal (SC) using serial block-face scanning electron microscopy (SBF-SEM) and 3D reconstruction for a detailed analysis of cause of primary open-angle glaucoma (POAG).</p>
+            <p>3D Reconstruction, LabVIEW, Perfusion</p>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        function openModal(id) {
+          document.getElementById(id).style.display = 'block';
+        }
+    
+        function closeModal(id) {
+          document.getElementById(id).style.display = 'none';
+        }
+    
+        window.onclick = function(event)  {
+          const modals = document.querySelectorAll('.modal');
+          modals.forEach(modal => {
+            if (event.target === modal) modal.style.display = 'none';
+          });
+        }
+      </script>
 </body>
+</html>
