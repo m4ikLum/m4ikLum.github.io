@@ -121,11 +121,15 @@
   cursor: pointer;
 }
 .modal-content img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
-  max-height: 320px;
-  object-fit: cover;
-  margin-bottom: 18px;
+  height: auto;
+  max-width: 100vw;
+  max-height: 80vh;
+  object-fit: contain;
   border-radius: 10px;
+  background: #eee;
 }
 .modal-skills {
   margin-bottom: 18px;
