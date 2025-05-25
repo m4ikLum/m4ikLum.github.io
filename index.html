@@ -37,6 +37,7 @@
              data-image="research_poster.jpg"
              data-skills="LabVIEW, 3D Reconstruction, Perfusion, Image Analysis, Data Visualization"
              data-description="This study investigated giant vacuoles (GV) in Schlemm's Canal (SC) using serial block-face scanning electron microscopy (SBF-SEM) and 3D reconstruction for a detailed analysis of cause of primary open-angle glaucoma (POAG).">
+             data-pdf="UROP_ePoster.pdf">
           <div class="card-title">Comparison of Giant Vacuoles to the Inner Wall Endothelium of Schlemm’s Canal between Normal and Glaucomatous Human Donor Eye</div>
           <div class="card-summary">Boston University School of Medicine Gong Lab</div>
           <img src="research_poster.jpg" alt="Project Image" class="card-thumb">
@@ -50,7 +51,10 @@
         <div class="modal-content" onclick="event.stopPropagation()">
           <span class="close-btn" onclick="closeProjectModal(event)">&times;</span>
           <h2 id="modalTitle"></h2>
-          <img id="modalImage" src="" alt="Project Image">
+          <!-- Wrap the image in a link to the PDF -->
+          <a id="modalPdfLink" href="#" target="_blank">
+            <img id="modalImage" src="" alt="Project Image">
+          </a>
           <div class="modal-skills"><strong>Skills Used:</strong> <span id="modalSkills"></span></div>
           <p id="modalDescription"></p>
         </div>
@@ -101,11 +105,13 @@
         const image = card.getAttribute('data-image');
         const skills = card.getAttribute('data-skills');
         const description = card.getAttribute('data-description');
+        const pdf = card.getAttribute('data-pdf');
 
         document.getElementById('modalTitle').textContent = title;
         document.getElementById('modalImage').src = image;
         document.getElementById('modalSkills').textContent = skills;
         document.getElementById('modalDescription').textContent = description;
+        document.getElementById('modalPdfLink').href = pdf;
 
         document.getElementById('projectModal').classList.add('active');
       }
@@ -113,6 +119,7 @@
       function closeProjectModal(event) {
         document.getElementById('projectModal').classList.remove('active');
       }
+
       </script>
 </body>
 
