@@ -243,3 +243,80 @@
 }
 
 
+/* --- Enhanced Styles Below --- */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Sticky Navbar */
+.tablink {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e293b;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color: #334155;
+}
+
+.tablink.active {
+  background-color: #0f172a;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Enhanced Headings and Content */
+h1, h2 {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+/* Modal Enhancements */
+.modal-content {
+  border: 1px solid #ccc;
+}
