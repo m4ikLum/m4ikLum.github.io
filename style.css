@@ -276,24 +276,59 @@ body {
   background-color: #0f172a;
 }
 
-/* Footer */
-footer {
-  background-color: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  margin-top: 40px;
+
+
+
+
+/* --- Light Purple Theme Styles Below --- */
+
+:root {
+  --main-color: #ccb0f8;
+  --dark-color: #a98fe3;
+  --text-color: #2d2d2d;
+  --background-color: #f9f8fc;
+  --card-bg: #ffffff;
+  --hover-bg: #e3d4fa;
+  --nav-color: #bba0f5;
 }
 
-/* Enhanced Headings and Content */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.tablink {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color: var(--dark-color);
+}
+
+.tablink.active {
+  background-color: var(--nav-color);
+}
+
+/* Section Titles */
 h1, h2 {
   font-weight: 600;
-  color: #1e293b;
+  color: var(--dark-color);
 }
 
+/* Links */
 a {
-  color: #0074d9;
+  color: #7a4cc4;
   text-decoration: none;
 }
 
@@ -309,6 +344,7 @@ button {
 /* Cards */
 .card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--card-bg);
 }
 
 .card:hover {
@@ -316,7 +352,17 @@ button {
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
-/* Modal Enhancements */
+/* Modals */
 .modal-content {
-  border: 1px solid #ccc;
+  border: 1px solid var(--main-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
 }
