@@ -323,7 +323,7 @@ body {
 /* Section Titles */
 h1, h2 {
   font-weight: 600;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 
 /* Links */
