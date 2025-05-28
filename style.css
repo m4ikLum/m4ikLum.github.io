@@ -403,7 +403,7 @@ footer {
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 650;
   transition: background-color 0.3s, transform 0.2s;
   /*for resume link*/
   text-decoration: none;  /* removes underline */
