@@ -378,10 +378,10 @@ footer {
 }
 
 .home-welcome {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   margin-left: 40px; 
-  margin-top: 200px; 
+  margin-top: 1000px; 
   
 }
 
@@ -401,6 +401,7 @@ footer {
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s, transform 0.2s;
+  width: 60px;
 }
 
 .home-link:hover {
