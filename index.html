@@ -168,6 +168,7 @@
 
         <!-- Right Side Form -->
         <form class="contact-form" action="https://formspree.io/f/xldbqaaq" method="POST">
+          <p id="form-status" style="margin-top: 10px;"></p>
           <div class="form-row">
             <input type="text" name="First Name" placeholder="First Name" required>
             <input type="text" name="Last Name" placeholder="Last Name" required>
@@ -258,6 +259,29 @@
       function closeProjectModal(event) {
         document.getElementById('projectModal').classList.remove('active');
       }
+
+      //confirmation message after email is sent
+      const form = document.querySelector(".contact-form");
+      const status = document.getElementById("form-status");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const data = new FormData(form);
+
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          status.textContent = "Message sent! Thank you.";
+          form.reset();
+        } else {
+          status.textContent = "Something went wrong.";
+        }
+      });
 
 
 
