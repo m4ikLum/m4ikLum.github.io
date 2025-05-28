@@ -355,6 +355,9 @@ footer {
 .home-left {
   flex: 1;
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-name {
