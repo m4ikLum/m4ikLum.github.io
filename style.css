@@ -412,3 +412,33 @@ footer {
     text-align: center;
   }
 }
+
+
+/* --- Nav Tabs Aligned to Top Right --- */
+.nav-tabs {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.tablink {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tablink:hover {
+  background-color: var(--dark-color);
+}
+
+.tablink.active {
+  background-color: var(--nav-color);
+}
