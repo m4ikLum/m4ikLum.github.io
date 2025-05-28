@@ -362,49 +362,44 @@ footer {
   margin-left: 100px;
 }
 
+.home-row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .home-photo {
-  display: block;
-  margin: 40px auto 20px auto; /* centers image */
-  max-width: 400px;
+  width: 280px;
+  max-width: 100%;
   border-radius: 12px;
   object-fit: cover;
   background: #eee;
 }
 
-.home-right {
-  flex: 2;
-  min-width: 300px;
-}
-
-.home-welcome {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  margin-left: 40px; 
-  margin-top: 300px; 
+.home-welcome-box {
+  flex: 1 1 300px;
+  max-width: 450px;
   
 }
 
 .home-links {
+  margin-top: 20px;
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .home-link {
-  flex: 1 1 60px;
+  padding: 8px 14px;
   background-color: var(--main-color);
   color: white;
-  padding: 10px 3px;
+  border-radius: 6px;
   text-align: center;
-  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 650;
-  transition: background-color 0.3s, transform 0.2s;
-  /*for resume link*/
-  text-decoration: none;  /*removes underline*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .home-link:hover {
