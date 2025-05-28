@@ -352,13 +352,6 @@ footer {
   padding: 60px 40px;
 }
 
-.home-left {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .home-name {
   font-size: 7rem;
@@ -366,11 +359,12 @@ footer {
   margin-bottom: 20px;
   margin-top: 60px;
   white-space: nowrap; 
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 .home-photo {
-  width: 100%;
+  display: block;
+  margin: 40px auto 20px auto; /* centers image */
   max-width: 400px;
   border-radius: 12px;
   object-fit: cover;
