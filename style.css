@@ -400,14 +400,14 @@ footer {
   flex: 1 1 60px;
   background-color: var(--main-color);
   color: white;
-  padding: 10px 5px;
+  padding: 10px 3px;
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 650;
   transition: background-color 0.3s, transform 0.2s;
   /*for resume link*/
-  text-decoration: none;  /* removes underline */
+  text-decoration: none;  /*removes underline*/
   display: flex;
   align-items: center;
   justify-content: center;
