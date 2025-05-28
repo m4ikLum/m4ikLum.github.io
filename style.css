@@ -405,7 +405,11 @@ footer {
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s, transform 0.2s;
-  
+  /*for resume link*/
+  text-decoration: none;  /* removes underline */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-link:hover {
