@@ -358,13 +358,14 @@ footer {
 }
 
 .home-name {
-  font-size: 3rem;
+  font-size: 7rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .home-photo {
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
   border-radius: 12px;
   object-fit: cover;
   background: #eee;
