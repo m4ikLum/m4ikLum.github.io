@@ -378,8 +378,11 @@ footer {
 }
 
 .home-welcome {
-  font-size: 1.2rem;
+  font-size: 3rem;
   margin-bottom: 30px;
+  margin-left: 40px; 
+  margin-top: 40px; 
+  
 }
 
 .home-links {
