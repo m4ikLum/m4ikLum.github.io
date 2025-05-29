@@ -219,9 +219,21 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
+
+        //save current tab to local storage
+        localStorage.setItem("lastTab", tabName);
       }
-      // Open default tab on load
-      document.getElementById("defaultOpen").click();
+     // Open last selected tab or default to Home
+      window.addEventListener("DOMContentLoaded", () => {
+        const lastTab = localStorage.getItem("lastTab") || "Home";
+        const tabButton = Array.from(document.getElementsByClassName("tablink"))
+          .find(btn => btn.textContent === lastTab);
+        if (tabButton) {
+          tabButton.click();
+        } else {
+          document.getElementById("defaultOpen").click();
+        }
+      });
       
       // Card expand/collapse functionality
       function expandCard(card) {
