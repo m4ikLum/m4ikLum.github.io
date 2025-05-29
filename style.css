@@ -471,3 +471,27 @@ footer {
 
 
 
+.contact-container {
+  display: flex;
+  flex-direction: row-reverse; /* ✅ Puts form on right, info on left */
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
+  justify-content: space-between;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1 1 45%;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+}
