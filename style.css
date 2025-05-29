@@ -371,7 +371,7 @@ footer {
 }
 
 .home-photo {
-  width: 280px;
+  width: 350px;
   max-width: 100%;
   border-radius: 12px;
   object-fit: cover;
@@ -381,7 +381,7 @@ footer {
 }
 
 .home-welcome-box {
-  font-size: 2rem;
+  font-size: 3rem;
   flex: 1 1 300px;
   max-width: 450px;
   
