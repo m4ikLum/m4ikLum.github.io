@@ -387,9 +387,14 @@ footer {
   
 }
 .home-welcome {
-  white-space: nowrap;
-  overflow: visible;
+  font-size: clamp(1.25rem, 2vw, 1.75rem); /* responsive size */
+  font-weight: 500;
+  white-space: nowrap;        /* prevents wrapping */
+  overflow: hidden;           /* hides overflow text */
+  text-overflow: clip;        /* cuts off without "..." */
+  max-width: 100%;            /* avoids layout breaking */
 }
+
 
 .home-links {
   margin-top: 20px;
