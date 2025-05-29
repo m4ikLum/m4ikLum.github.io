@@ -364,7 +364,7 @@ footer {
 
 .home-row {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
@@ -376,9 +376,12 @@ footer {
   border-radius: 12px;
   object-fit: cover;
   background: #eee;
+  margin-left: 60px;
+  
 }
 
 .home-welcome-box {
+  font-size: 2rem;
   flex: 1 1 300px;
   max-width: 450px;
   
@@ -389,6 +392,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  padding: 10px 14px;
 }
 
 .home-link {
