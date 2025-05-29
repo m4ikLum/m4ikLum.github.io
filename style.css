@@ -494,7 +494,7 @@ footer {
   padding: 16px 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  min-height: 150px;
+  height: 120px;  
   resize: vertical;
 }
 
