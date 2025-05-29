@@ -388,7 +388,7 @@ footer {
 }
 .home-welcome {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .home-links {
