@@ -384,8 +384,12 @@ footer {
   font-size: 3rem;
   flex: 1 1 300px;
   max-width: 450px;
-  flex-wrap: nowrap;
   
+}
+.home-welcome {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .home-links {
