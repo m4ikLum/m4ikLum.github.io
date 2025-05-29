@@ -196,7 +196,7 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  object-fit: contain;
+  object-fit: cover;
   background: #f5f5f5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -223,12 +223,12 @@
 .gallery-row {
   display: flex;
   justify-content: space-evenly;
-  gap: 24px;
+  gap: 30px;
   margin-top: 32px;
 }
 
 .gallery-img {
-  max-width: 100px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   border-radius: 8px;
