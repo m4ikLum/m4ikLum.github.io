@@ -225,6 +225,7 @@
   justify-content: space-evenly;
   gap: 30px;
   margin-top: 32px;
+  margin-bottom: 40px;
 }
 
 .gallery-img {
