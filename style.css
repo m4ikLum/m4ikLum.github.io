@@ -489,7 +489,23 @@ footer {
   background-color: var(--nav-color);
 }
 
+.contact-container {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.contact-info {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.contact-form {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
 
 .contact-form .form-row {
   display: flex;
