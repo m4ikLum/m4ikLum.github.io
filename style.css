@@ -435,7 +435,8 @@ footer {
 }
 
 .home-link {
-  padding: 8px 10px;
+  padding: 4px 8px;
+  font-size: 2rem;
   background-color: var(--main-color);
   color: white;
   border-radius: 6px;
