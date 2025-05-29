@@ -387,8 +387,8 @@ footer {
   
 }
 .home-welcome {
-  font-size: clamp(1.25rem, 2vw, 1.75rem); /* responsive size */
-  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.5rem); /* responsive size */
+  font-weight: 600;
   white-space: nowrap;        /* prevents wrapping */
   overflow: hidden;           /* hides overflow text */
   text-overflow: clip;     
