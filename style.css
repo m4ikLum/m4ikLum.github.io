@@ -389,7 +389,6 @@ footer {
 .home-welcome {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .home-links {
