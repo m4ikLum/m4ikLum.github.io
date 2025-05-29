@@ -74,7 +74,7 @@
 
           
 
-            <!--<h2>Gallery</h2>-->
+            <!--Gallery-->
             <div class="gallery-row">
               <img src="images/gallery1.jpg" alt="Gallery 1" class="gallery-img">
               <img src="images/gallery2.JPG" alt="Gallery 2" class="gallery-img">
@@ -145,7 +145,7 @@
           </a>
           <!-- GitHub Icon: hidden by default, shown if project has a GitHub link -->
           <a id="githubIconLink" href="#" target="_blank" style="display:none;" aria-label="View on GitHub">
-            <!-- SVG GitHub icon -->
+            <!-- SVG GitHub icon coped and pasted lol-->
             <svg height="28" width="28" viewBox="0 0 16 16" fill="currentColor" style="vertical-align:middle;">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
               0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
@@ -203,7 +203,7 @@
 
     <!-- Javascript code -->
     <script>
-      // Tab functionality
+      //tab functionality
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -220,7 +220,7 @@
         //save current tab to local storage
         localStorage.setItem("lastTab", tabName);
       }
-     // Open last selected tab or default to Home
+     //open last selected tab or default to Home
       window.addEventListener("DOMContentLoaded", () => {
         const lastTab = localStorage.getItem("lastTab") || "Home";
         const tabButton = Array.from(document.getElementsByClassName("tablink"))
@@ -232,15 +232,15 @@
         }
       });
       
-      // Card expand/collapse functionality
+      //card expand/collapse functionality
       function expandCard(card) {
-        // Collapse all other cards
+        //collapse all other cards
         document.querySelectorAll('.project-card').forEach(function(c) {
           if (c !== card) c.classList.remove('expanded');
         });
-        // Toggle this card
+        //toggle this card
         card.classList.toggle('expanded');
-        // Show/hide details
+        //show/hide details
         document.querySelectorAll('.project-card .card-details').forEach(function(details) {
           details.style.display = "none";
         });
@@ -262,7 +262,7 @@
         document.getElementById('modalSkills').textContent = skills;
         document.getElementById('modalDescription').textContent = description;
 
-        // Determine which link to use for the main image
+        //determine which link to use for the main image
         let mainLink = "#";
         if (github) {
           mainLink = github;
@@ -271,7 +271,7 @@
         }
         document.getElementById('modalMainLink').href = mainLink;
 
-        // Show GitHub icon only if github link exists
+        //show GitHub icon only if github link exists
         const githubIcon = document.getElementById('githubIconLink');
         if (github) {
           githubIcon.href = github;
