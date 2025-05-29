@@ -473,7 +473,7 @@ footer {
 
 .contact-container {
   display: flex;
-  flex-direction: row-reverse; /* ✅ Puts form on right, info on left */
+  flex-direction: row; 
   flex-wrap: wrap;
   gap: 40px;
   padding: 0 40px;
