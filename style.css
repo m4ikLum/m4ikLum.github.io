@@ -391,7 +391,7 @@ footer {
   font-weight: 500;
   white-space: nowrap;        /* prevents wrapping */
   overflow: hidden;           /* hides overflow text */
-  text-overflow: clip;        /* cuts off without "..." */
+  text-overflow: clip;     
   max-width: 100%;            /* avoids layout breaking */
 }
 
