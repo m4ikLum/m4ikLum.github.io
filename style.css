@@ -527,7 +527,7 @@ footer {
 }
 
 .contact-form textarea {
-  flex: 1 1 48%;
+  flex: 3 1 72%;
   font-size: 1.5rem;
   padding: 16px 20px;
   border-radius: 8px;
@@ -537,9 +537,9 @@ footer {
 }
 
 .contact-form button {
-  flex: 1 1 48%;
+  flex: 0 1 20%;
   font-size: 1.5rem;
-  padding: 16px;
+  padding: 6px 12px;
   border: none;
   border-radius: 8px;
   background-color: var(--main-color);
