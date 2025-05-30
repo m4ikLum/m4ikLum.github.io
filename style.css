@@ -539,7 +539,7 @@ footer {
 .contact-form button {
   flex: 0 1 20%;
   font-size: 1.5rem;
-  padding: 6px 12px;
+  padding: 6px 16px;
   border: none;
   border-radius: 8px;
   background-color: var(--main-color);
