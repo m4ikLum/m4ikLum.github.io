@@ -548,6 +548,10 @@ footer {
   height: auto;
 }
 
+.message-button-row {
+  align-items: flex-end;
+}
+
 .contact-form button:hover {
   background-color: var(--dark-color);
 }
