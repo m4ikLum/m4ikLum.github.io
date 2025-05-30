@@ -514,7 +514,7 @@ footer {
   flex-wrap: nowrap;
   gap: 24px;
   margin-bottom: 24px;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .contact-form input {
