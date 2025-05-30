@@ -511,7 +511,7 @@ footer {
 .contact-form .form-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 24px;
   margin-bottom: 24px;
   align-items: stretch;
@@ -519,7 +519,7 @@ footer {
 
 .contact-form input {
   flex: 1 1 48%;
-  min-width: 200px;
+  min-width: 50px;
   font-size: 1.5rem;
   padding: 16px 20px;
   border-radius: 8px;
